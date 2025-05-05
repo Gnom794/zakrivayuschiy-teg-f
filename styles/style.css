@@ -86,6 +86,37 @@
   border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
+.main__card-img-container-image-first {
+  filter: brightness(95%);
+}
+
+.main__card-img-container-image-second {
+  filter: contrast(120%);
+}
+
+.main__card-img-container-image-third {
+  filter: blur(0.1rem);
+}
+
+.main__card-img-container-image-fourth {
+  filter: opacity(0.3);
+}
+
+.main__card-img-container-image-fifth {
+  filter: grayscale(0.1);
+}
+.main__card-img-container-image-sixth {
+  filter: saturate(140%);
+}
+
+.main__card-img-container-image-seventh {
+  filter: hue-rotate(-60deg);
+}
+
+.main__card-img-container-image-eighth {
+  filter: sepia(90%);
+}
+
 .main__card-img-container-text {
   font-family: var(--PressStart2P-text-font), sans-serif;
   font-weight: 400;
@@ -132,10 +163,8 @@
   display: flex;
   margin-block-start: 25px;
   margin-inline-end: 25px;
-  gap: 12px;
   justify-content: flex-end;
   margin-block-end: 25px;
-  gap: 4px;
 }
 
 .card__like-button {
