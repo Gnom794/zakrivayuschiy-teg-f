@@ -1,1 +1,1 @@
-https://gnom794.github.io/zakrivayuschiy-teg-f/
+https://gnom794.github.io/zakrivayuschiy-teg-f
