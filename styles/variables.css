@@ -1,1 +1,9 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --PressStart2P-text-font: 'PressStart2P';
+    --Inter-font: 'Inter';
+    --text-shadow: 1px rgba(255, 255, 255, 1);
+    --bg-gradient: repeating-linear-gradient();
+    --contour-color-heart: #000;
+    --animation-color-heart: #FF0000;
+}
+
