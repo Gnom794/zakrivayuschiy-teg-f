@@ -12,9 +12,11 @@
     align-items: center;
     background-color: #fff;
     border: 2px solid transparent;
+    border-spacing: 0px 5px;
     outline: none;
     transition: border-color 0.3s ease;
     block-size: 38px;
+    padding: 0;
 }
 
 .card__icon-button:hover {

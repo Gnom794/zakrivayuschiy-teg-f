@@ -127,8 +127,8 @@
   color: #000;
   text-shadow: var(--text-shadow);
   position: absolute;
-  right: 3%;
-  top: 7%;
+  right: clamp(0.813rem, 0.548rem + 1.13vw, 1.563rem);
+  top: 25px;
   z-index: 1;
   opacity: 50%;
 }
@@ -160,6 +160,7 @@
   margin-inline-end: 25px;
   justify-content: flex-end;
   margin-block-end: 25px;
+  gap: 7px;
 }
 
 .button {
@@ -170,7 +171,7 @@
   overflow: hidden;
   position: relative;
   background: transparent;
-  transition: transform 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .button::before {
@@ -189,11 +190,11 @@
   block-size: 38px;
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
   transform: translateX(100%);
 }
 
-.main__button-section-btn:hover::before {
+.button:hover::before {
   transform: translateX(100%);
 }
 
@@ -223,23 +224,15 @@
   overflow: hidden;
   position: relative;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .main__button-section-btn-container-svg {
   fill: #fff;
   align-self: center;
   mix-blend-mode: difference;
-  inline-size: 21px;
-  block-size: 21px;
-}
-
-.main__button-section-btn-container-svg:hover {
-  mix-blend-mode: difference;
-  z-index: 1;
-}
-
-.main__button-section-btn:hover {
-  cursor: pointer;
+  inline-size: 28px;
+  block-size: 28px;
 }
 
 .main__button-section-btn:focus {
@@ -248,14 +241,17 @@
 }
 
 .main__button-section-btn-container {
-  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 7px;
+  gap: 8px;
 }
 
 .main__button-section-btn-container-text {
   font-family: var(--highlighted-font), fantasy;
   font-weight: 400;
   font-size: 14px;
-  margin: 9px;
+  margin: 0 7px;
 }
 
 .main__dialog {
@@ -269,6 +265,13 @@
 
 .main__dialog-container-items {
   display: flex;
+  gap: 20px;
+}
+
+.main__dialog-container-items-svg {
+  inline-size: 35%;
+  block-size: 40px;
+  align-self: center;
 }
 
 .main__dialog-container-items-title {
@@ -280,16 +283,12 @@
 }
 
 .main__dialog-container-button {
-  font-family: var(--highlighted-font), fantasy;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 90%;
   inline-size: clamp(16.063rem, 14.455rem + 4.286vw, 18.313rem);
   block-size: 38px;
-  border: 2px solid #000;
   margin-block-start: 30px;
   text-transform: uppercase;
-  cursor: pointer
+  cursor: pointer;
+  background-color: transparent;
 }
 
 dialog {
@@ -303,8 +302,8 @@ dialog:not([open]) {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.7);
-  
+  background-color: #000;
+  opacity: 75%;
 } 
 
 @media (width >= 1020px) {
@@ -313,4 +312,9 @@ dialog::backdrop {
     flex-direction: row;
     display: flex;
   }
+
+  .main__button-section-btn-container-text {
+      margin: 9px 7px;
+  }
+
 }
