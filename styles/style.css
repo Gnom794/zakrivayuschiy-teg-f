@@ -194,10 +194,6 @@
   transform: translateX(100%);
 }
 
-.button:hover::before {
-  transform: translateX(100%);
-}
-
 .card__like-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
